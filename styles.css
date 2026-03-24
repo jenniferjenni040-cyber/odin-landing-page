@@ -1,120 +1,199 @@
-/* Reset some defaults */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
+  font-weight: 400;
+  color: #222936;
+  background: #fff;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-a {
+
+.header {
+  background-color: #222936;
+  color: white;
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.nav a {
+  color: white;
+  margin-left: 20px;
+  font-size: 0.9rem;
   text-decoration: none;
-  color: inherit;
+}
+.nav a:hover {
+  text-decoration: underline;
 }
 
-/* Hero Section */
 .hero {
-  background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
-  height: 500px;
+  background-color: #222936;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+}
+.hero-text {
+  max-width: 45%;
+}
+.hero-text h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  color: #c1c5d0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.btn-primary {
+  background-color: #3578e5;
+  color: white;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #2a62c6;
+}
+
+/* Hero Image Placeholder */
+.hero-image {
+  max-width: 45%;
+}
+.image-placeholder {
+  background-color: #666a73;
+  color: white;
+  width: 300px;
+  height: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
+  font-size: 0.9rem;
   text-align: center;
-  color: white;
 }
 
-.hero h1 {
-  font-size: 3rem;
-}
 
-.hero p {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-}
-
-.hero .btn {
-  background: #ff6600;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-}
-
-/* Section Styles */
-.section {
+.info-section {
   padding: 60px 20px;
   text-align: center;
+  color: #222936;
 }
-
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.info-section h2 {
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-size: 1.4rem;
 }
-
-.about img {
-  margin-top: 20px;
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* Services Grid */
-.services-grid {
+.info-cards {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
 }
-
-.service-card {
-  background: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-}
-
-.service-card img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.service-card h3 {
-  margin: 10px 0;
-}
-
-/* Contact Form */
-.contact form {
+.card {
+  width: 140px;
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 0 auto;
-  gap: 10px;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #444a58;
+}
+.card-illustration {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3578e5;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.contact input, 
-.contact textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+
+.testimonial {
+  background-color: #d9dee6;
+  padding: 50px 20px;
+  font-style: italic;
+  color: #222936;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+.testimonial blockquote p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.testimonial footer {
+  font-weight: 700;
+  font-style: normal;
+  text-align: right;
 }
 
-.contact button {
-  background: #ff6600;
+
+.cta {
+  background-color: #3578e5;
   color: white;
-  padding: 10px;
-  border: none;
+  padding: 25px 20px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto 60px auto;
+}
+.cta-text {
+  max-width: 70%;
+  font-size: 1rem;
+}
+.cta-text strong {
+  display: block;
+  margin-bottom: 5px;
+}
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 18px;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: white;
+  color: #3578e5;
   cursor: pointer;
 }
 
-/* Footer */
+
 .footer {
-  background: #333;
+  background-color: #222936;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  margin-top: 40px;
 }
